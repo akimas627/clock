@@ -1,0 +1,9 @@
+
+
+    <%= form_with model:@posts,url:posts_index_path,local:true,class:"dbotan" do |f| %>
+     <%= f.submit "出勤", id: "go",class:"ebotan" %>
+     <%= f.submit "退勤", id: "leav",class:"ebotan" %>
+    <%end%>
+    <div class=henshu>
+    <%= button_to "編集",{ action: 'index'}, {method: :get,class: "fbotan"} %>
+    </div>

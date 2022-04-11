@@ -1,0 +1,30 @@
+<h1>一覧表</h1>
+ <%= link_to "トップへ戻る", "/",class:"home" %>
+
+
+
+
+<% @posts.each do |post|%>
+
+
+    
+<table>
+    <tr>
+        <th scope="col">id</th>
+        <th scope="col">出勤時間</th>
+        <th scope="col">退勤時間</th>
+        <th scope="col">編集</th>
+    </tr>
+    <tr>
+    <th scope="row"><%= post.id %></th>
+        <td><%= post.go %></td>
+        <td><%= post.leav %></td>
+        <td><%= link_to "詳細", "show"%></td>
+
+    </tr>
+    
+</table>
+
+<%end%>
+
+

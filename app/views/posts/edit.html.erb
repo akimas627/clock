@@ -1,0 +1,6 @@
+<textarea> <%= @post.content %> <textarea>
+<%= form_tag("/posts/#{@post.id}/update") do %>
+  <textarea> <%= @post.content %> </textarea>
+  <input type="submit" value="保存">
+<% end %>
+

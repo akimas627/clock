@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  go: 2022-04-03 16:03:28
+  leav: 2022-04-03 16:03:28
+  content: MyText
+
+two:
+  go: 2022-04-03 16:03:28
+  leav: 2022-04-03 16:03:28
+  content: MyText
